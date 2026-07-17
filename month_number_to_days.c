@@ -1,0 +1,59 @@
+/*
+PROGRAM: CONVERT THE MONTH'S NUMBER TO NUMBER OF DAYS IN IT
+LANGUAGE: C
+AUTHOR- AADITYA SHAKYA
+*/
+#include <stdio.h>
+int main()
+{
+    int month;
+    printf("Enter the month number(1-12): ");
+    scanf("%d", &month);
+    if (month >= 1 && month <= 12)
+    {
+        switch (month)
+        {
+        case 1:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        case 2:
+            printf("NUMBER OF DAYS: %d", 28);
+            break;
+        case 3:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        case 4:
+            printf("NUMBER OF DAYS: %d", 30);
+            break;
+        case 5:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        case 6:
+            printf("NUMBER OF DAYS: %d", 30);
+            break;
+        case 7:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        case 8:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        case 9:
+            printf("NUMBER OF DAYS: %d", 30);
+            break;
+        case 10:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        case 11:
+            printf("NUMBER OF DAYS: %d", 30);
+            break;
+        case 12:
+            printf("NUMBER OF DAYS: %d", 31);
+            break;
+        }
+    }
+    else
+    {
+        printf("INVALID MONTH NUMBER!!");
+    }
+    return 0;
+}
